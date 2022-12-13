@@ -1,0 +1,140 @@
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  margin-right: auto;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.logo-studio {
+  color: var(--logo-color);
+}
+
+.logo-studio-footer {
+  color: var(--white-color);
+}
+
+.header-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.header-links .current {
+  color: var(--accent-color);
+}
+
+.header-nav-link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: color 250ms var(--cubic-anime);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-nav-link.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.contact-mail {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
+  color: var(--text-color);
+  transition: color 250ms var(--cubic-anime);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mail-icon {
+  fill: var(--text-color);
+  margin-right: 10px;
+
+  .contact-mail:hover &,
+  .contact-mail:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.phone-icon {
+  fill: var(--text-color);
+  margin-right: 10px;
+
+  .contact-phone:hover &,
+  .contact-phone:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.contact-phone {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--text-color);
+  transition: color 250ms var(--cubic-anime);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
