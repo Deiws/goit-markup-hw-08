@@ -155,6 +155,10 @@
   }
 }
 
+.modal-check:focus + .check-text::before {
+  border-color: var(--accent-color);
+}
+
 .modal-check:checked + .check-text::before {
   background-color: var(--accent-color);
   border: none;
